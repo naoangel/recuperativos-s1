@@ -156,15 +156,15 @@ var word2= "amor";
 //se crea función 
 function anagram(word1,word2){
 /*
-*  en nuevas variables las palabras quedan guardadas como array con cada 
+* en nuevas variables las palabras quedan guardadas como array con cada 
 * letra como elementro y ordenado alfabéticamente gracias a los métodos split y sort 
 */
   var newWord1 = word1.split("").sort();
   var newWord2 = word2.split("").sort();
 
 /*
-*si el largo y  valor de las  nuevas variables  son idénticos, devolver true  
-*de lo contrario  false.
+* Si el largo y  valor de las  nuevas variables  son idénticos, devolver true  
+* de lo contrario  false.
 */
 
  if(newWord1.length === newWord2.length &&  newWord1.value === newWord2.value ){
@@ -223,10 +223,11 @@ function multi(arr){
  	var newArr = [];
 //ciclo for para iterar el arreglo original
  	for(i=0; i<=arr.length-1; i++){
-//variable para apartar la multiplicación al elemento altiguo     
-     var multip = arr[i]*12;
-//el nuevo elemento es "pusheado" en la variable newArr
-     newArr.push(multip);  
+/* 
+* La multiplicación de cada elemento por 12 da un nuevo elemento 
+* que es "pusheado" en la variable newArr.
+*/
+     newArr.push(arr[i]*12);  
     }
 //mostrar en consola el nuevo arreglo.
     console.log(newArr);

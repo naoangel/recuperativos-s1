@@ -122,9 +122,33 @@ for(i=0; <= length(arr); i++ ){
 * fue aprobado o no. Las notas van de 1 a 7 y se aprueba con un promedio igual o 
 * mayor a 4. 
 */
+//variable de ejemplo con valor tipo array.
+var grades = [5,7,6,4,5,6,3,5,5,7];
+
+//creando función
+function ave(grades){
+	var addition = 0;
+  var average;
+    for(var i=0; i < grades.length; i++){
+      addition += grades[i];
+    }
+    var average = addition/(grades.length-1);
+
+    if(average>=4 && average<7.1){
+    	alert("This student is approved with an average of "+average);
+    }
+    else if (average>=1 || average<4){
+    	alert("this student is failing with an average of "+average); 
+    }
+    else{
+    	alert("there must be an error in the grades, check again, they can be only between 1 and 7");
+    }
+}
 
 
-
+ /*if(grades[i]<1 || grades>7){
+      	alert("check the grades, there must be an error");
+      	break;*/
 
 
 /*
@@ -157,7 +181,8 @@ var word2= "amor";
 function anagram(word1,word2){
 /*
 * en nuevas variables las palabras quedan guardadas como array con cada 
-* letra como elementro y ordenado alfabéticamente gracias a los métodos split y sort 
+* letra como un elemento por separado y ordenado alfabéticamente gracias 
+* a los métodos split y sort. 
 */
   var newWord1 = word1.split("").sort();
   var newWord2 = word2.split("").sort();
@@ -190,16 +215,21 @@ pares.
 * Ejemplo: input arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 *   output nuevoArr = [2, 4, 6, 8, 10]
 */
-
+//variable de ejemplo
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
+//creando la función
 function onlyEven(arr){
+//nueva variable para guardar los números pares	
 	var evenArr=[];
+//ciclo for para recorrer el arreglo	
   for(var i=0; i<arr.length; i++){
+//condicional para determinar que es par
   	if(arr[i]%2==0){
+//pusheando los elementos pares a un arreglo en la nueva variable  		
   		evenArr.push(arr[i]);
   	}
   }
+//devolviendo arreglo con pares  
   console.log(evenArr)
 }
 

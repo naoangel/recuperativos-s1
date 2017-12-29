@@ -92,6 +92,25 @@ for(i=0; <= length(arr); i++ ){
 *          retorna 2
 */
 
+//solo variables para el ejemplo
+var arr = [5,7,10,21,24];
+var num = 10;
+//creando función
+function position(arr,num){
+//variable de apoyo para dar el resultado
+  var resultado;
+//ciclo for para recorrer el arreglo  
+	for(var i =0; i<arr.length; i++){
+//uso método indexOf para dar la úbicación del número/elemento del arreglo		
+		resultado= arr.indexOf(num);
+	}
+//retorna resultado	 
+   return resultado;
+}
+
+
+
+
 
 
 /*
@@ -113,6 +132,37 @@ for(i=0; <= length(arr); i++ ){
 *            nombre = “Nadia”
 *            retorna 3
 */
+//variables del ejemplo
+var list = ['Allison', 'Belén', 'Nadia', 'Marcia', 'Ale', 'Fabián'];
+var name = 'Nadia';
+//creando función
+function sitHere(list,name){
+//variable de apoyo para el resultado
+	var seat; 
+//recorro el arreglo con un for
+	for(var i = 0; i < list.length; i++){
+/*
+* le sumo 1 al indexOf para que pueda darme el número correcto, ya que los asientos
+* parten en un y el indexOf en 0.
+*/
+		var seat = list.indexOf(name)+1;
+	}
+//Imprimo resultado en consola	
+    console.log("El asiento de " + name + " es el número " + seat)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 
@@ -148,7 +198,18 @@ function ave(grades){
 
  /*if(grades[i]<1 || grades>7){
       	alert("check the grades, there must be an error");
-      	break;*/
+      	break;
+  -intento por dar más especificidad, 
+  lo había insertado dentro del ciclo for pero no lo consideró-
+*/
+
+
+
+
+
+
+
+
 
 
 /*
@@ -159,6 +220,14 @@ function ave(grades){
 * Palíndroma: palabra que se lee igual de adelante hacia atrás como de atrás hacia
 * adelante. Ejemplo: Amalama
 */
+
+
+
+
+
+
+
+
 
 
 

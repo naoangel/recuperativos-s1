@@ -112,7 +112,6 @@ function position(arr,num){
 
 
 
-
 /*
 * Problema medio 9 (30 puntos):
 * Dados dos arreglos, devolver un nuevo arreglo que contenga la suma de los índices
@@ -121,6 +120,23 @@ function position(arr,num){
 *             arr2 = [5, 6, 7, 8]
 *             retorna nuevoArr = [6, 8, 10, 12]
 */
+
+
+ var arr1=[1,2,3,4];
+ var arr2=[5,6,7,8];
+
+ function newArr(arr1,arr2){
+ 	
+ }
+
+
+
+
+
+
+
+
+
 
 
 /*

@@ -82,6 +82,30 @@ for(i=0; <= length(arr); i++ ){
 */
 
 
+//creando función
+function findAdd(arr,num){
+/*
+* variable find de apoyo. y utilizo método indezOf para determinar 
+* si tiene o no ubicación  en el array, en caso de no encontrarse 
+* el resultado debiera ser -1
+*/
+		var find = arr.indexOf(num);
+//condicional para el caso en que no se encuentre el elemento en el array
+		if(find == -1){
+//pusheo el elemento al arreglo			
+			arr.push(num);
+//devuelvo el arreglo			
+	    return arr;
+	  }
+//condicional para el elemento que si tiene ubicación, o sea es diferente de -1
+		else if (find!= -1){
+//devuelve el array sin cambios			
+			return arr;
+		}
+	}
+	
+
+
 
 
 /*
@@ -202,11 +226,15 @@ var grades = [5,7,6,4,5,6,3,5,5,7];
 
 //creando función
 function ave(grades){
+//variables de apoyo	
 	var addition = 0;
   var average;
+//ciclo for que recorre arreglo de notas  
     for(var i=0; i < grades.length; i++){
-      addition += grades[i];
+// en la variable addition se van sumando una a una las notas
+      var addition += grades[i];
     }
+//    
     var average = addition/(grades.length-1);
 
     if(average>=4 && average<7.1){

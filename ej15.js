@@ -121,13 +121,22 @@ function position(arr,num){
 *             retorna nuevoArr = [6, 8, 10, 12]
 */
 
-
+//NO FUNCIONA AUN LANZA MAS RESULTADOS DE LOS QUE DEBIERA
  var arr1=[1,2,3,4];
  var arr2=[5,6,7,8];
 
- function newArr(arr1,arr2){
- 	
- }
+ function sumInd(arr1,arr2){
+   var newArr = [];
+ 
+ 	 for(var i = 0; i<arr1.length ; i++){
+ 	 	for(var x =0; x<arr2.length ; x++ ){
+ 	 		newArr.push(arr1[i]+arr2[x]);
+ 	 	}
+     
+ 	 }
+ 	 return newArr;
+ 	 	}
+ 
 
 
 
